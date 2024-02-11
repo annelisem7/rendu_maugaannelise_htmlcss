@@ -119,19 +119,19 @@ footer {
 }
 
 .slide-image1 {
-  background-image: url("../Images/image1.png");
+  background-image: url("../image/image1.png");
   background-size: cover;
   background-position: 15%;
 }
 
 .slide-image2 {
-  background-image: url("../Images/image2.png");
+  background-image: url("../image/image2.png");
   background-size: cover;
   background-position: center;
 }
 
 .slide-image3 {
-  background-image: url("../Images/image3.png");
+  background-image: url("../image/image3.png");
   background-size: cover;
   background-position: center;
 }
