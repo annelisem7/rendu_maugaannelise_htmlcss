@@ -2,10 +2,10 @@ body {
   padding: 0%;
   margin: 0%;
 }
+
 main {
   text-align: center;
   padding: 20px;
-  background-color: white;
 }
 
 nav {
@@ -43,7 +43,7 @@ nav {
   align-items: center;
 }
 
-div h1 {
+.name {
   color: cadetblue;
   font-family: buka bird;
 }
@@ -85,4 +85,217 @@ footer {
   font-family: waltograph;
   font-size: xx-large;
   color: white;
+}
+
+/*******************/
+/****  SWIPER  ****/
+/*****************/
+
+.swiper-slide {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  padding-left: 100px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 72px;
+  color: white;
+}
+
+.subtitle {
+  letter-spacing: 3px;
+  font-size: 24px;
+}
+
+.slide-image1 {
+  background-image: url("../Images/image1.png");
+  background-size: cover;
+  background-position: 15%;
+}
+
+.slide-image2 {
+  background-image: url("../Images/image2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-image3 {
+  background-image: url("../Images/image3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+li {
+  list-style: none;
+}
+
+/*****************/
+/****  TABS  ****/
+/***************/
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.tab-active {
+  background-color: lightblue;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.tabcontent > p {
+  color: cadetblue;
+}
+
+.active {
+  display: block;
+}
+
+* {
+  font-size: 18px;
+  font-family: buka bird;
+}
+
+/*****************/
+/****  FORM  ****/
+/***************/
+form {
+  border: 1px solid rgba(153, 153, 153, 0.6);
+}
+
+form > div {
+  margin: 38px 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  height: 15px;
+  width: 40%;
+}
+
+button {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 10px 32px;
+  cursor: pointer;
+}
+
+.invisible {
+  display: none;
+}
+
+.error {
+  margin-top: 5px;
+  color: red;
+}
+/*
+.message-error {
+  border: 1px solid rgb(212, 42, 0);
+  color: rgb(212, 42, 0);
+  background-color: rgba(212, 42, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.message-error.visible {
+  display: block;
+}
+
+.message-success {
+  border: 1px solid rgb(81, 150, 2);
+  color: rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.message-success.visible {
+  display: block;
+}
+.success {
+  border: 1px solid rgb(81, 150, 2);
+  color: rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+}
+*/
+/**********************/
+/****  DARK MODE  ****/
+/********************/
+.container-dark {
+  background-color: #cbe6ff;
+  color: rgb(64, 64, 64);
+}
+
+.container-change {
+  background-color: #2c3c54;
+  color: cadetblue;
+}
+
+.banniere-titre {
+  color: rgb(64, 64, 64);
+}
+
+.switchbox {
+  width: 90px;
+  height: 30px;
+  background-color: #61b3ff;
+  border-radius: 15px;
+  position: relative; /*Permet de positionner l'icône en absolute*/
+  border: 1px solid #61b3ff;
+  padding: 1rem;
+}
+.switch-change {
+  background-color: #1e2939;
+  border: 1px solid #1e2939;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute; /*par rapport à la DIV switch*/
+  top: -1px; /*évite un décalage de 1px*/
+  left: -1px; /*évite un décalage de 1px*/
+}
+.switchbox i {
+  position: absolute; /*par rapport à la DIV switch*/
+  color: #ffd363;
+  top: 6px;
+  right: 23px;
+}
+.btn-change {
+  right: -1px;
+  left: auto; /*nécessaire pour ne pas prendre en compte la valeur left*/
+}
+.icone-change {
+  left: 10px;
 }

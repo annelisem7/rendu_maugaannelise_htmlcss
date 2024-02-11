@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stitch</title>
-    <link
-      rel="icon"
-      type="image/jpg"
-      href="../rendu_maugaannelise_htmlcss/image/stitch.jpg"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
@@ -17,34 +12,79 @@
         <p class="disney">Disney</p>
         <ul class="navlinks">
           <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="characters.html">Characters</a>
-          </li>
-          <li>
-            <a href="movies.html">Movies</a>
-          </li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="formulaire.html">Formulaire</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="img-container">
-        <div class="images"></div>
-        <img
-          src="https://www.nostalgift.com/wp-content/uploads/2023/02/76ebe26f31.webp"
-          alt="Lilo et Stitch"
-        />
-        <img
-          src="https://www.betanews.fr/wp-content/webp-express/webp-images/uploads/2020/11/lilo-stitch-scaled.jpg.webp"
-          alt="Tous les perso"
-        />
-        <p class="citation">
-          " Ohana " signifie famille.. Famille signifie que personne ne doit
-          être abandonné, ni oublié.
-        </p>
-      </section>
-    </main>
+    <div class="swiper mon-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-image1">
+          <p class="subtitle">
+            C’est ma famille. Je l’ai trouvé tout seul, sans l’aide de personne.
+            Elle est petite et brisée mais elle me convient… Oui, me convient.
+          </p>
+          <p class="title">Lilo</p>
+        </div>
+
+        <div class="swiper-slide slide-image2">
+          <p class="subtitle">
+            Comment fait-on quand on a rien ? Pas même des souvenirs à revisiter
+            dans la nuit.
+          </p>
+          <p class="title">Stitch</p>
+        </div>
+
+        <div class="swiper-slide slide-image3">
+          <p class="subtitle">Aloha</p>
+          <p class="title">Stitch</p>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="container-dark">
+      <main>
+        <section class="img-container">
+          <div class="images"></div>
+          <img
+            src="https://www.nostalgift.com/wp-content/uploads/2023/02/76ebe26f31.webp"
+            alt="Lilo et Stitch"
+          />
+          <img
+            src="https://www.betanews.fr/wp-content/webp-express/webp-images/uploads/2020/11/lilo-stitch-scaled.jpg.webp"
+            alt="Tous les perso"
+          />
+          <p class="citation">
+            " Ohana " signifie famille.. Famille signifie que personne ne doit
+            être abandonné, ni oublié.
+          </p>
+        </section>
+      </main>
+    </div>
     <footer>
       <p>© 2023- Disney Lilo et Stitch</p>
+      <div class="banniere-titre">
+        <h1>LIGHT MODE</h1>
+      </div>
+      <div class="switchbox">
+        <i class="fas fa-moon"></i>
+        <div class="btn"></div>
+      </div>
     </footer>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/48b64bcfc3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
   </body>
 </html>

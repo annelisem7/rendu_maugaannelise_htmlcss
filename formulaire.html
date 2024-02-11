@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stitch</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container-dark">
+      <header>
+        <nav>
+          <p class="disney">Disney</p>
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="formulaire.html">Formulaire</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div id="message-success" class="message-success"></div>
+        <form
+          id="formulaire"
+          action=""
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="form-item">
+            <label for="name">Nom</label>
+            <input type="name" id="nom" name="NOM" />
+            <div class="error invisible">
+              Ce champ doit contenir entre trois et dix caracteres
+            </div>
+          </div>
+
+          <div class="form-item">
+            <label for="last name">Prenom</label>
+            <input type="last name" id="prenom" name="Prenom" />
+            <div class="error invisible">
+              Ce champ doit contenir entre trois et dix caracteres
+            </div>
+          </div>
+
+          <div class="form-item">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <div class="error invisible">
+              Ce champ doit contenir plus de dix caracteres
+            </div>
+          </div>
+
+          <div class="form-item">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" />
+            <div class="error invisible">
+              Ce champ doit contenir au moins douze caracteres
+            </div>
+          </div>
+
+          <div class="form-item">
+            <label for="password2">Confirmation de mot de passe</label>
+            <input type="password" id="password2" name="password2" />
+            <div class="error invisible">
+              Les mots de passe doivent etre identiques
+            </div>
+          </div>
+          <button id="btn" type="submit">S'incrire</button>
+        </form>
+      </main>
+      <footer>
+        <p>© 2023- Disney Lilo et Stitch</p>
+        <div class="banniere-titre">
+          <h1>LIGHT MODE</h1>
+        </div>
+        <div class="switchbox">
+          <i class="fas fa-moon"></i>
+          <div class="btn"></div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script
+        src="https://kit.fontawesome.com/48b64bcfc3.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="form.js"></script>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
